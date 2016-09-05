@@ -14,6 +14,11 @@ npm install --save-dev jscodeshift-ava-to-jest
 
 **TBD: Explain how this module can be used in an existing project.**
 
+## Why?
+
+It all started with [a tweet](https://twitter.com/mikenikles/status/772234132436885504),
+followed by [a suggestion](https://twitter.com/cpojer/status/772239240683925504) by Christoph Pojer.
+
 ## Contributing
 
 ### Project structure
