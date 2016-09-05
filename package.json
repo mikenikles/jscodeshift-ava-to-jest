@@ -1,6 +1,6 @@
 {
   "name": "jscodeshift-ava-to-jest",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Transforms test files from AVA to Jest",
   "main": "transform.js",
   "scripts": {
@@ -13,7 +13,9 @@
     "files": "ava-tests/**/*.test.js"
   },
   "jest": {
-    "testPathDirs": ["<rootDir>/jest-tests"]
+    "testPathDirs": [
+      "<rootDir>/jest-tests"
+    ]
   },
   "repository": {
     "type": "git",
