@@ -1,0 +1,25 @@
+{
+  "name": "jscodeshift-ava-to-jest",
+  "version": "0.0.1",
+  "description": "Transforms test files from AVA to Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikenikles/jscodeshift-ava-to-jest.git"
+  },
+  "keywords": [
+    "ava",
+    "jest",
+    "codemod",
+    "jscodeshift"
+  ],
+  "author": "Mike Nikles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikenikles/jscodeshift-ava-to-jest/issues"
+  },
+  "homepage": "https://github.com/mikenikles/jscodeshift-ava-to-jest#readme"
+}
