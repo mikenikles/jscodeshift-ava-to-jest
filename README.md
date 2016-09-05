@@ -28,4 +28,10 @@ npm install --save-dev jscodeshift-ava-to-jest
 
 ### Run tests
 
-`npm test`: Transforms tests from AVA to Jest.
+`npm test`: Transforms tests from AVA to Jest. In more detail:
+
+1. Runs `ava` on all files in `ava-tests` to make sure the AVA tests are valid.
+1. Deletes all files in `jest-tests`.
+1. Copies all files from `ava-tests` to `jest-tests`.
+1. Runs `jscodeshift` on all files in `jest-tests`.
+1. Runs `jest` on all files in `jest-tests` to make sure the Jest tests are valid.

@@ -6,8 +6,11 @@
   "scripts": {
     "cleanJestFiles": "rm -fr jest-tests/*",
     "prepareTestFiles": "npm run cleanJestFiles && cp ava-tests/* jest-tests/",
-    "test": "npm run transformTests && jest",
+    "test": "ava && npm run transformTests && jest",
     "transformTests": "npm run prepareTestFiles && jscodeshift jest-tests"
+  },
+  "ava": {
+    "files": "ava-tests/**/*.test.js"
   },
   "jest": {
     "testPathDirs": ["<rootDir>/jest-tests"]
