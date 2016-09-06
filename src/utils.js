@@ -1,13 +1,11 @@
-const getValue = (node) => {
+const getValue = (j, node) => {
   switch (node.type) {
     case 'Literal':
-      return node.raw
+      return [j.identifier(node.raw)]
     case 'Identifier':
-      return node.name
+      return [j.identifier(node.name)]
     case 'ObjectExpression':
-      return node.properties
-    default:
-
+      return [j.objectExpression(node.properties)]
   }
 }
 

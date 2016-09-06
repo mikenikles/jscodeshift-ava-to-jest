@@ -7,8 +7,8 @@ test('expected object literal', () => {
   })
 })
 
-// test('expected object variable', (t) => {
-//   const abc = { a: 'a', b: 'b', c: 'c' }
-//   const expected = { a: 'a', b: 'b', c: 'c' }
-//   t.deepEqual(abc, expected)
-// })
+test('expected object variable', () => {
+  const abc = { a: 'a', b: 'b', c: 'c' }
+  const expected = { a: 'a', b: 'b', c: 'c' }
+  expect(abc).toEqual(expected)
+})

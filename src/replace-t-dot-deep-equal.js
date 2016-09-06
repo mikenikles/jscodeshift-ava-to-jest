@@ -12,15 +12,15 @@ const replaceTdotDeepEqual = (j, root) => {
   tDotIs.forEach(expectation => {
     // Get the entire 't.deepEqual(actual, expected)' expression
     const expectationExpression = expectation.parentPath
-    const actualValue = utils.getValue(expectationExpression.value.arguments[0])
-    const expectedValue = utils.getValue(expectationExpression.value.arguments[1])
+    const actualValue = utils.getValue(j, expectationExpression.value.arguments[0])
+    const expectedValue = utils.getValue(j, expectationExpression.value.arguments[1])
     const newExpect = j.callExpression(
       j.identifier('expect'),
-      [j.identifier(actualValue)]
+      actualValue
     )
     const newActual = j.callExpression(
       j.identifier('toEqual'),
-      [j.objectExpression(expectedValue)]
+      expectedValue
     )
     const newExpression = j.memberExpression(
       newExpect, newActual
