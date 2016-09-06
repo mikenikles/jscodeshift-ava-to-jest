@@ -8,6 +8,7 @@ import replaceTdotIs from './src/replace-t-dot-is'
 import replaceTdotNot from './src/replace-t-dot-not'
 import replaceTdotDeepEqual from './src/replace-t-dot-deep-equal'
 import replaceTdotNotDeepEqual from './src/replace-t-dot-not-deep-equal'
+import replaceTdotRegex from './src/replace-t-dot-regex'
 
 const transform = (fileInfo, api, options) => {
   const j = api.jscodeshift;
@@ -25,6 +26,7 @@ const transform = (fileInfo, api, options) => {
   replaceTdotNot(j, root)
   replaceTdotDeepEqual(j, root)
   replaceTdotNotDeepEqual(j, root)
+  replaceTdotRegex(j, root)
 
   return root.toSource()
 }

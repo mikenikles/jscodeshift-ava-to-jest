@@ -33,7 +33,7 @@ followed by [a suggestion](https://twitter.com/cpojer/status/772239240683925504)
 - [x] [`.notDeepEqual(value, expected, [message])`](https://github.com/avajs/ava#notdeepequalvalue-expected-message)
 - [ ] [`.throws(function|promise, [error, [message]])`](https://github.com/avajs/ava#throwsfunctionpromise-error-message)
 - [ ] [`.notThrows(function|promise, [message])`](https://github.com/avajs/ava#notthrowsfunctionpromise-message)
-- [ ] [`.regex(contents, regex, [message])`](https://github.com/avajs/ava#regexcontents-regex-message)
+- [x] [`.regex(contents, regex, [message])`](https://github.com/avajs/ava#regexcontents-regex-message)
 - [ ] [`.notRegex(contents, regex, [message])`](https://github.com/avajs/ava#notregexcontents-regex-message)
 - [ ] [`.ifError(error, [message])`](https://github.com/avajs/ava#iferrorerror-message)
 
