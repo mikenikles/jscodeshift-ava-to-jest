@@ -4,6 +4,8 @@ const getValue = (node) => {
       return node.raw
     case 'Identifier':
       return node.name
+    case 'ObjectExpression':
+      return node.properties
     default:
 
   }

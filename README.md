@@ -29,14 +29,13 @@ followed by [a suggestion](https://twitter.com/cpojer/status/772239240683925504)
 - [x] [`.false(value, [message])`](https://github.com/avajs/ava#falsevalue-message)
 - [x] [`.is(value, expected, [message])`](https://github.com/avajs/ava#isvalue-expected-message)
 - [x] [`.not(value, expected, [message])`](https://github.com/avajs/ava#notvalue-expected-message)
-- [ ] [`.deepEqual(value, expected, [message])`](https://github.com/avajs/ava#deepequalvalue-expected-message)
+- [x] [`.deepEqual(value, expected, [message])`](https://github.com/avajs/ava#deepequalvalue-expected-message)
 - [ ] [`.notDeepEqual(value, expected, [message])`](https://github.com/avajs/ava#notdeepequalvalue-expected-message)
 - [ ] [`.throws(function|promise, [error, [message]])`](https://github.com/avajs/ava#throwsfunctionpromise-error-message)
 - [ ] [`.notThrows(function|promise, [message])`](https://github.com/avajs/ava#notthrowsfunctionpromise-message)
 - [ ] [`.regex(contents, regex, [message])`](https://github.com/avajs/ava#regexcontents-regex-message)
 - [ ] [`.notRegex(contents, regex, [message])`](https://github.com/avajs/ava#notregexcontents-regex-message)
 - [ ] [`.ifError(error, [message])`](https://github.com/avajs/ava#iferrorerror-message)
-- [ ] [``]()
 
 ## Contributing
 
