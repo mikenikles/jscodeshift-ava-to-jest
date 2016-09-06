@@ -1,6 +1,6 @@
 import utils from './utils'
 
-const replaceTdotIsWithExpect = (j, root) => {
+const replaceTdotIs = (j, root) => {
   const tDotIs = root.find(j.MemberExpression, {
     object: {
       name: 't'
@@ -29,4 +29,4 @@ const replaceTdotIsWithExpect = (j, root) => {
   })
 }
 
-export default replaceTdotIsWithExpect
+export default replaceTdotIs
