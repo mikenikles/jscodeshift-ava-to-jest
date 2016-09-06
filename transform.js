@@ -1,6 +1,7 @@
 import removeAvaImport from './src/remove-ava-import'
 import removeTParameter from './src/remove-t-parameter'
 import replaceTdotTruthy from './src/replace-t-dot-truthy'
+import replaceTdotFalsy from './src/replace-t-dot-falsy'
 import replaceTdotIs from './src/replace-t-dot-is'
 
 const transform = (fileInfo, api, options) => {
@@ -12,6 +13,7 @@ const transform = (fileInfo, api, options) => {
   // Transform each test
   removeTParameter(j, root)
   replaceTdotTruthy(j, root)
+  replaceTdotFalsy(j, root)
   replaceTdotIs(j, root)
 
   return root.toSource()
