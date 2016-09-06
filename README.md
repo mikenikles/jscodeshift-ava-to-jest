@@ -34,7 +34,7 @@ followed by [a suggestion](https://twitter.com/cpojer/status/772239240683925504)
 - [ ] [`.throws(function|promise, [error, [message]])`](https://github.com/avajs/ava#throwsfunctionpromise-error-message)
 - [ ] [`.notThrows(function|promise, [message])`](https://github.com/avajs/ava#notthrowsfunctionpromise-message)
 - [x] [`.regex(contents, regex, [message])`](https://github.com/avajs/ava#regexcontents-regex-message)
-- [ ] [`.notRegex(contents, regex, [message])`](https://github.com/avajs/ava#notregexcontents-regex-message)
+- [x] [`.notRegex(contents, regex, [message])`](https://github.com/avajs/ava#notregexcontents-regex-message)
 - [ ] [`.ifError(error, [message])`](https://github.com/avajs/ava#iferrorerror-message)
 
 ## Contributing
