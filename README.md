@@ -19,6 +19,25 @@ npm install --save-dev jscodeshift-ava-to-jest
 It all started with [a tweet](https://twitter.com/mikenikles/status/772234132436885504),
 followed by [a suggestion](https://twitter.com/cpojer/status/772239240683925504) by Christoph Pojer.
 
+## Supported AVA Assertions
+
+- [ ] [`.pass([message])`](https://github.com/avajs/ava#passmessage)
+- [ ] [`.fail([message])`](https://github.com/avajs/ava#failmessage)
+- [ ] [`.truthy(value, [message])`](https://github.com/avajs/ava#truthyvalue-message)
+- [ ] [`.falsy(value, [message])`](https://github.com/avajs/ava#falsyvalue-message)
+- [ ] [`.true(value, [message])`](https://github.com/avajs/ava#truevalue-message)
+- [ ] [`.false(value, [message])`](https://github.com/avajs/ava#falsevalue-message)
+- [x] [`.is(value, expected, [message])`](https://github.com/avajs/ava#isvalue-expected-message)
+- [ ] [`.not(value, expected, [message])`](https://github.com/avajs/ava#notvalue-expected-message)
+- [ ] [`.deepEqual(value, expected, [message])`](https://github.com/avajs/ava#deepequalvalue-expected-message)
+- [ ] [`.notDeepEqual(value, expected, [message])`](https://github.com/avajs/ava#notdeepequalvalue-expected-message)
+- [ ] [`.throws(function|promise, [error, [message]])`](https://github.com/avajs/ava#throwsfunctionpromise-error-message)
+- [ ] [`.notThrows(function|promise, [message])`](https://github.com/avajs/ava#notthrowsfunctionpromise-message)
+- [ ] [`.regex(contents, regex, [message])`](https://github.com/avajs/ava#regexcontents-regex-message)
+- [ ] [`.notRegex(contents, regex, [message])`](https://github.com/avajs/ava#notregexcontents-regex-message)
+- [ ] [`.ifError(error, [message])`](https://github.com/avajs/ava#iferrorerror-message)
+- [ ] [``]()
+
 ## Contributing
 
 ### Project structure
