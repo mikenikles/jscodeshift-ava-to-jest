@@ -3,6 +3,7 @@ import removeTParameter from './src/remove-t-parameter'
 import replaceTdotTruthy from './src/replace-t-dot-truthy'
 import replaceTdotFalsy from './src/replace-t-dot-falsy'
 import replaceTdotTrue from './src/replace-t-dot-true'
+import replaceTdotFalse from './src/replace-t-dot-false'
 import replaceTdotIs from './src/replace-t-dot-is'
 
 const transform = (fileInfo, api, options) => {
@@ -16,6 +17,7 @@ const transform = (fileInfo, api, options) => {
   replaceTdotTruthy(j, root)
   replaceTdotFalsy(j, root)
   replaceTdotTrue(j, root)
+  replaceTdotFalse(j, root)
   replaceTdotIs(j, root)
 
   return root.toSource()
