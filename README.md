@@ -2,6 +2,10 @@
 
 A [jscodeshift](https://github.com/facebook/jscodeshift) codemod that transforms test files from [AVA](https://github.com/avajs/ava) to [Jest](https://facebook.github.io/jest/).
 
+## Deprecation Warning
+
+I no longer maintain this package. As a great, more feature complete alternative, I recommend https://github.com/skovhus/jest-codemods.
+
 ## Install
 
 Get `jscodeshift-ava-to-jest` from [NPM](https://www.npmjs.com/package/jscodeshift-ava-to-jest)
