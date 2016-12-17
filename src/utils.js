@@ -6,6 +6,8 @@ const getValue = (j, node) => {
       return [j.identifier(node.name)]
     case 'ObjectExpression':
       return [j.objectExpression(node.properties)]
+    default:
+      return [node]
   }
 }
 
