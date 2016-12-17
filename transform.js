@@ -1,5 +1,7 @@
 import removeAvaImport from './src/remove-ava-import'
 import removeTParameter from './src/remove-t-parameter'
+import replaceBeforeEach from './src/replace-before-each'
+import replaceAfterEach from './src/replace-after-each'
 import replaceTdotTruthy from './src/replace-t-dot-truthy'
 import replaceTdotFalsy from './src/replace-t-dot-falsy'
 import replaceTdotTrue from './src/replace-t-dot-true'
@@ -16,6 +18,8 @@ const transform = (fileInfo, api, options) => {
   const root = j(fileInfo.source);
 
   removeAvaImport(j, root)
+  replaceBeforeEach(j, root)
+  replaceAfterEach(j, root)
 
   // Transform each test
   removeTParameter(j, root)
